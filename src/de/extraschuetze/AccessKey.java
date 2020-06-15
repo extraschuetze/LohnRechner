@@ -3,9 +3,6 @@ package de.extraschuetze;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseEvent;
-import java.sql.*;
-
 public class AccessKey extends javax.swing.JFrame {
 
     // <editor-fold defaultstate="collapsed" desc="Initialisierungen">
@@ -81,7 +78,8 @@ public class AccessKey extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(ActionEvent evt) {
         if(jTextField.getText().equals("lp191019")) {
-            NeuKey.Load();
+            Keys.Load();
+            AccessKey.INSTANCE.setVisible(false);
         }
     }
 
