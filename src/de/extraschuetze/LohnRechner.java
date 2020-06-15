@@ -56,7 +56,7 @@ public class LohnRechner extends javax.swing.JFrame {
     // </editor-fold>
 
     //TODO: Version ändern
-    public static String version = "1.3";
+    public static String version = "1.4";
 
     public static void main(String[] args) {
         VersionCheck.Load();
