@@ -185,7 +185,12 @@ public class Keys extends javax.swing.JFrame {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://194.169.211.186:3306/ni2249076_1sql6?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Berlin&autoReconnect=true", "ni2249076_1sql6", "keys4321");
+            String ip = "localhost";
+            String port = "3306";
+            String database = "keys";
+            String user = "admin";
+            String passoword = "XXXXXXXXXXXX";
+            conn = DriverManager.getConnection("jdbc:mysql://" + ip + ":" + port + "/" + database + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Berlin&autoReconnect=true", user, password);
 
             Statement statement = conn.createStatement();
 
@@ -201,7 +206,12 @@ public class Keys extends javax.swing.JFrame {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://194.169.211.186:3306/ni2249076_1sql6?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Berlin&autoReconnect=true", "ni2249076_1sql6", "keys4321");
+            String ip = "localhost";
+            String port = "3306";
+            String database = "keys";
+            String user = "admin";
+            String passoword = "XXXXXXXXXXXX";
+            conn = DriverManager.getConnection("jdbc:mysql://" + ip + ":" + port + "/" + database + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Berlin&autoReconnect=true", user, password);
 
             Statement statement = conn.createStatement();
 
