@@ -169,7 +169,7 @@ public class LohnRechner extends javax.swing.JFrame {
         if (papaToPascal(gehaltPascal, uberweisungPascal) > 0) {
             jLabel14.setText("Papa zu Pascal: " + runden(papaToPascal(gehaltPascal, uberweisungPascal)) + "€");
             try {
-                generate(runden(papaToPascal(gehaltPascal, uberweisungPascal)), zweck, "Pascal Voigt", "COBADEFFXXX", "DE85 2604 0030 0602 7643 00");
+                generate(runden(papaToPascal(gehaltPascal, uberweisungPascal)), zweck, "Pascal Voigt", "XXXXXXX", "DEXXXXXXXXXXXXXXXX");
             } catch (Exception e) {
 
             }
@@ -179,7 +179,7 @@ public class LohnRechner extends javax.swing.JFrame {
         if (papaToPierre(gehaltPierre) > 0) {
             jLabel15.setText("Papa zu Pierre: " + runden(papaToPierre(gehaltPierre)) + "€");
             try {
-                generate(runden(papaToPierre(gehaltPierre)), zweck, "Pierre Voigt", "COBADEFFXXX", "DE89 2604 0030 0602 6843 00");
+                generate(runden(papaToPierre(gehaltPierre)), zweck, "Pierre Voigt", "XXXXXXXXXXXXXXXX", "DEXXXXXXXXXXXXX");
             } catch (Exception e) {
 
             }
@@ -189,7 +189,7 @@ public class LohnRechner extends javax.swing.JFrame {
         if (uberweisungPascal > gehaltPascal) {
             jLabel16.setText("Pascal zu Papa: " + runden((uberweisungPascal - gehaltPascal)) + "€");
             try {
-                generate(runden(uberweisungPascal - gehaltPascal), zweck, "Veikko Voigt", "BYLADEM1001", "DE65 1203 0000 0016 8728 89");
+                generate(runden(uberweisungPascal - gehaltPascal), zweck, "Veikko Voigt", "XXXXXXXXX", "DEXXXXXXXXXXXXXX");
             } catch (Exception e) {
 
             }
